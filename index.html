@@ -1,0 +1,278 @@
+# write-html.py
+
+f = open('home.html', 'w')
+f1 = open('dartboard.html', 'w')
+
+
+message = """<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>NOC- Sistema de Monitoramento de chamado</title>
+    <script  src="js.js"></script>
+
+</head
+
+
+
+
+
+<body>
+    <header>
+      <p>Criando ideias</p>
+        Digite seu Nome: <input type="text" Clica  no botão />
+        Digite seu E-mail: <input type="email" Clica  no botão />
+        <a href="index.html" title= "home">home</a>
+    </header>
+    
+hora <p id="time"></p>
+      
+    <nav>
+        <form>
+            <fieldset>
+                <legend><b>1-</b>Qual comando é usado para fazer uma cópia exata, em um único momento, de um volume lógico para fins de backup? </legend>
+                <p>
+                    <input type="radio" name="questao1" id="questao1" value="questao1" />
+                    <label for="questao1">lvsnaphost</label>
+                </p> 
+                 <p>
+                    <input type="radio" name="questao1" id="questao1" value="questao2" />
+                    <label for="questao1">lvcreate</label>
+                </p> 
+                 <p>
+                    <input type="radio" name="size" id="questao1" value="grade" />
+                    <label for="questao1">lvcopy</label>
+                </p> 
+                  <p>
+                    <input type="radio" name="questao1" id="size_4" value="questao1" />
+                    <label for="questao1">lvclone</label>
+                </p>
+            </fieldset>
+        </form>
+    </nav>
+    
+    <nav>
+        <form>
+            <fieldset>
+             <legend><b>2-</b>Quando os dados históricos de uso de recursos são importantes? (Selecione TRÊS respostas corretas.)</legend>
+                <p>
+                    <input type="checkbox" id="questao2"  name="questao2" value="questao2">
+                    <label for="questao2">Previsão de quando os recursos precisarão ser aumentados </label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao2"  name="questao2" value="questao2">
+                    <label for="questao2">Selecionando um fornecedor de computador</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao2"  name="questao2" value="questao2">
+                    <label for="questao2">Identificando processos eliminados durante ocorrências de falta de memória</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao2"  name="questao2" value="questao2">
+                    <label for="taste_4">Diagnosticar problemas de capacidade</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao2"  name="questao2" value="questao2">
+                    <label for="questao2">Solucionando um problema de software</label>
+                </p>
+            </fieldset>
+        </form>
+    </nav>
+    
+    
+    <nav>
+        <form>
+            <fieldset>
+             <legend><b>3-</b>Nos exercícios de planejamento de capacidade, quais ferramentas auxiliam na listagem e identificação de processos interessante? (Escolha DUAS respostas corretas.)</legend>
+                <p>
+                    <input type="checkbox" id="questao3"  name="questao3" value="questao3">
+                    <label for="taste_1">acpid</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao3"  name="questao3" value="questao3">
+                    <label for="taste_2">lsof</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao3"  name="questao3" value="questao3">
+                    <label for="taste_3">pstree</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao3"  name="questao3" value="questao3">
+                    <label for="questao3">telinit</label>
+                </p>
+            </fieldset>
+        </form>
+    </nav>
+    
+    
+        <nav>
+        <form>
+            <fieldset>
+                <legend><b>4-</b>Na seguinte saída  do comando top, quais processos contribuem para a porcentagem de tempo que a CPU gasta no estado de wa? </legend>
+                <legend> Tarefas: 193 no total, 1 running , 190 dormindo, 2 parados, 0 zumbi </legend>
+                 <legend> CPU(s): 0,5%us, 0,3%sy, 0,0%ni, 98,2%id, 1,0%wa, 0,0%hi, 0,0%si, 0,0%st </legend>
+                <p>
+                    <input type="radio" name="size" id="size_1" value="pequeno" />
+                    <label for="size_1">Processos aguardando interação do usuário</label>
+                </p> 
+                 <p>
+                    <input type="radio" name="size" id="size_2" value="medio" />
+                    <label for="size_2">Processos que já foram encerrados e estão aguardando para serem lançados novamente</label>
+                </p> 
+                 <p>
+                    <input type="radio" name="size" id="size_3" value="grade" />
+                    <label for="size_1">Processos que ainda não foram agendados porque não foram totalmente carregados na RAM ou estão em swap</label>
+                </p> 
+                  <p>
+                    <input type="radio" name="size" id="size_4" value="gigante" />
+                    <label for="size_1">Processos aguardando a filanizar a  operações de IO</label>
+                </p>
+            </fieldset>
+        </form>
+    </nav>
+    
+    
+    
+    <nav>
+        <form>
+            <fieldset>
+             <legend><b>5-</b>Na saída do exemplo abaixo, quais colunas detalham a porcentagem de tempo que a CPU gastou em execução código não-kernel e a porcentagem de tempo que a CPU gastou executando o código do kernel? (Escolha DUAS respostas corretas.)</legend>
+            <legend> vmstat 1 100 </legend>
+            <legend> procs -----------memory---------- ---swap-- -----io---- --system-- ----cpu---- </legend>
+            <legend> r b swpd free buff cache si so bi bo in cs us sy id wa</legend>
+            <legend> 0 0 0 282120 134108 5797012 0 0 0 2 0 0 0 0 100 0 </legend>
+            <legend> 0 0 0 282120 134108 5797012 0 0 0 0 1007 359 0 0 100 0</legend>
+            <legend> 0 0 0 282120 134108 5797012 0 0 0 0 1117 577 0 0 100 0 </legend>
+            <legend> 0 0 0 282120 134108 5797012 0 0 0 0 1007 366 0 0 100 0 </legend>
+                <p>
+                    <input type="checkbox" id="questao5"  name="questao5" value="questao5">
+                    <label for="questao5">id</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao5"  name="questao5" value="questao5">
+                    <label for="questao5">us</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao5"  name="questao5" value="questao5">
+                    <label for="questao5">wa</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao5"  name="questao5" value="questao5">
+                    <label for="questao5">sy</label>
+                </p>
+            </fieldset>
+        </form>
+    </nav>
+    
+    
+    
+    
+    <nav>
+        <form>
+            <fieldset>
+             <legend><b>6-</b>Na saída a seguir, qual porcentagem de tempo a CPU estava aguardando por E/S pendente? </legend>
+            <legend> vmstat 1 100 </legend>
+            <legend> procs -----------memory---------- ---swap-- -----io---- --system-- ----cpu---- </legend>
+            <legend> r b swpd free buff cache si so bi bo in cs us sy id wa</legend>
+            <legend>  0  0 	 4388 179440  65780 514116    0    0      22   132      450  181      1   1   98    1  0 </legend>
+            <legend>  0  0  	 4388 179432  65780 514116    0    0        0     0       500  257 	 0   2  98    0  0</legend>
+            <legend>  0  0  	 4388 179432  65780 514116    0    0        0     0       451  114 	 0   0 100   0  0 </legend>
+            <legend>  0  0 	 4388 179432  65780 514116    0    0        0     0        431  118  	 0   0 100   0  0 </legend>
+                <p>
+                    <input type="checkbox" id="questao6"  name="questao6" value="questao6">
+                    <label for="questao6">0</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao6"  name="questao6" value="questao6">
+                    <label for="questao6">100</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao6"  name="questao6" value="questao6">
+                    <label for="questao6">35.9</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao6"  name="questao6" value="questao6">
+                    <label for="questao6">57.7</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao6"  name="questao6" value="questao6">
+                    <label for="questao6">36.6</label>
+                </p>
+            </fieldset>
+        </form>
+    </nav>
+    
+    
+    
+      <nav>
+        <form>
+            <fieldset>
+             <legend><b>7-</b>Quais comandos abaixo são úteis para coletar dados sobre conexões remotas do sistema de arquivos? (Escolha DUAS respostas corretas.).)</legend>
+                <p>
+                    <input type="checkbox" id="questao7"  name="questao7" value="questao7">
+                    <label for="questao7">pidstat</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao3"  name="questao7" value="questao7">
+                    <label for="questao7">nfsiostat</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao3"  name="questao7" value="questao7">
+                    <label for="questao7">sadf</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="questao3"  name="questao7" value="questao7">
+                    <label for="questao7">cifsiostat</label>
+                </p>
+            </fieldset>
+        </form>
+    </nav>
+    
+    
+    <nav>
+        <form>
+            <fieldset>
+                <legend><b>8-</b> Na saída a seguir, as médias de carga representam as médias de carga do sistema para quais períodos de tempo? 12:10:05 até 18 dias, 19:00, 2 usuários, carga média: 0,47, 24,71, 35,31 </legend>
+                 <p>
+                    <input type="radio" name="size" id="questao8" value="questao8" />
+                    <label for="questao8">1,5 e 15 minutos</label>
+                </p> 
+                 <p>
+                    <input type="radio" name="size" id="questao8" value="questao8" />
+                    <label for="questao8">1,15 e 30 minutos</label>
+                </p> 
+                 <p>
+                    <input type="radio" name="size" id="questao8" value="questao8" />
+                    <label for="questao8">1,5 e 15 segundos</label>
+                </p> 
+                  <p>
+                    <input type="radio" name="size" id="questao8" value="questao8" />
+                    <label for="questao8">15,30 e 60 minutos</label>
+                </p>
+                 <p>
+                    <input type="radio" name="size" id="questao8" value="questao8" />
+                    <label for="questao8">15,30 e 60 segundos</label>
+                </p>
+            </fieldset>
+        </form>
+    </nav>
+    
+    
+    
+    
+<button type="button" class="btn btn-success">Avançar</button>
+<button type="button" class="btn btn-success">Voltar</button>
+<input class="btn btn-primary" type="submit" value="Submit">
+
+    
+    
+    <main>
+        <h2>Ola bem vindo a hoje o dia 29 de setembro de 2022 as 13:33</h2>
+    </main>
+    <footer>
+        <p>Bora trabalhar que as eleiçoes é dia 02 de outubro</p>
+    </footer>
+
+</body>
+</html>"""
+f.write(message)
+f.close()
